@@ -166,7 +166,7 @@ android {
 			signingConfig signingConfigs.development
 		}
 		release {
-			signingConfig signingConfigs.publishing
+			signingConfig signingConfigs.development
 		}
 	}
 

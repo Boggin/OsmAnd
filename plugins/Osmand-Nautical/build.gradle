@@ -12,7 +12,7 @@ android {
 			keyPassword "android"
 		}
 		release {
-      		storeFile file("/var/lib/jenkins/osmand_key")
+			storeFile file("/var/lib/jenkins/osmand_key")
 			storePassword System.getenv("OSMAND_APK_PASSWORD")
 			keyAlias "osmand"
 			keyPassword System.getenv("OSMAND_APK_PASSWORD")
@@ -47,7 +47,7 @@ android {
 			signingConfig signingConfigs.development
 		}
 		release {
-			signingConfig signingConfigs.release
+			signingConfig signingConfigs.development
 		}
 	}
 }
